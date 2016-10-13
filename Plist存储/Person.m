@@ -1,7 +1,14 @@
-# Data-archive
-- 用归档和解档时归档的对象必须遵守NSCoding协议
-- 实现encodeWithCoder:归档方法和initWithCoder解析方法
-```
+//
+//  Person.m
+//  Plist存储
+//
+//  Created by liuxingchen on 16/10/13.
+//  Copyright © 2016年 Liuxingchen. All rights reserved.
+//
+
+#import "Person.h"
+
+@implementation Person
 //自定义对象归档调用该方法，用来描述当前对象里面的那些属性需要归档
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
@@ -18,4 +25,4 @@
     }
     return self;
 }
-```
+@end
